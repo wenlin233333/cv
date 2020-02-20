@@ -1,0 +1,26 @@
+h2{
+    border-bottom-style:solid;
+    color: darkgray;
+    border-color: darkgray;
+}
+
+
+.ensume{
+    text-align: left;
+}
+
+p{
+    text-align: right;
+}
+.contact{
+    text-align: right;
+}
+
+.parcours{
+    border-color: darkgray;
+    border-bottom-style:solid;
+    font-size: 30px;
+
+}
+.portil{text-align:center;
+    border-radius: 0 20px 0 20px}
