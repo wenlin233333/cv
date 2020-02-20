@@ -2,43 +2,107 @@
 <html lang="fr">
     <head>
         <meta charset ='utf-8' />
-        <title> cd3 exo de css</title>
-        <link rel="stylesheet" href="index.css" />
+        <title> cv de wenli</title>
+        <link rel="stylesheet" href="cv.css" />
+        <script language="javascript">
+            function preview(fang)
+            {
+            if (fang < 10){
+            bdhtml=window.document.body.innerHTML;
+            sprnstr="<!--startprint"+fang+"-->";
+            eprnstr="<!--endprint"+fang+"-->";
+            prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18);
+            prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));
+            window.document.body.innerHTML=prnhtml;
+            window.print();
+            window.document.body.innerHTML=bdhtml;
+            } else {
+            window.print();
+            }
+            }
+            </script>
+            
     </head>
 
+    <div id=wdf>
+    <body>
+        <div class="portil">
+            <img src="wenli.jpg" width="200" height="275" />
+        <h1>NIU Wenli</h1>
+        </div>
 
-<body>
-    <div class="portil">
-        <img src="einstein.jpg" width="200" height="300"/>
-    <h1>Marceau Barnard</h1>
+   
+    <h2>Information professionnelees</h2>
+    <pre>
+    <table>
+        <tr>
+            <td>Master 1 bioinformatique | </td>
+            <td>Date de naissence:1995/10/21</td>
+        </tr>
+        <tr>
+            <td>Tel:+33 6 63 09 14 68  </td>
+            <td>E-mail:n397508481@icloud.com</td>
+        </tr>
+    </table>
+    </pre>
+    </fieldset>
+    <h2>Parcours acad&eacute;mique</h2>
+    
+    <div class="temps">
+    <li>2014~2015 :  BACCALAUREAT SCIENTIFIQUE  - XINJIANG.
+                     FLE(français langue étrangère)</li>
+      <li>2015~2016 :le certificat de la langue française  DELF B2. </li>
+      <li>2016~2017 : 1ère année SVSTC (L1) , Université de Bordeaux</li>
+      <li>2017-2018 ; 2e année de biologie(L2) , Université de Bordeaux</li>
+      <li>2018-2019 : 3èmeannée de biologie(L3), BLOC C(Biochimie), Université de Bordeaux</li>
+      <li>2019-2020 : 1ere année de Master de bio-informatique</li>
+      <a href="https://www.u-bordeaux.fr/formation/
+      2016/PRMA_74/bio-informatique">Master bio-informatique</a>
+      </div>
+
+
+
+    <h2>Expériences professionneles et stages</h2>
+
+    <div class="stage">
+     <h3>2019 Mai：stage à IMN (Institut des Maladies Neurodégénératives ) a Bordeaux</h3>
     </div>
 
-    <div class="section_profesion">
-    <h2>
-        &Eacute;tudiant &agrave; bordeux
-    </h2>
-    </div>
-
-    <div class="ensume">
-    <h4>
-        Je suis un &eacute;tudiant r&eacute;cemment dipl&ocirc;m&eacute; et fascin&eacute;par les nouvelles technologie.
-        J'ai d'abord acquis de solides connaissances en biologie &aacute; Paris.Puis vous pouvez continuer a ecrire un bref résume sur votre parcours.
-    </h4>
+    <h2>Competences informatiques</h2>
     <p>
-    <p> 26 ans</p>
-    <p>13 Quel des salinieres</p>
-    <p>33400 bordeaux</p>
+        debutant en:
+        <b>	<font color="purple">	*Python* </font>
+            <font color="indigo">	*R* </font>
+            <font color="blue">		*HTML and CSS* </font>
+            <font color="green">	*JavaScript* </font>
+            <font color="yellow">	*Java* </font>
+            <font color="orange">	*ImageJ* </font>
+            <font color="red">		*SQL* </font>
+    </b>
     </p>
-    <form class="contact">
-        <input type="button" value="contactez-moi" onclick="window.location.href'mailto:macreaubarnard@hotmail.fr'"/>
-    </form>
-    </div>
-<div class="parcours">
-<h3>parcours</h3>
+
+    <h2>Langues</h2>
+    <div>
+        <p>Le chinois</p>
+        <progress value="100" max="100"></progress>
+        <p>Le français</p>
+        <progress value="70" max="100"></progress>
+        <p>L'anglais</p>
+        <progress value="70" max="100"></progress>
+        <p>le japonais</p>
+        <progress value="40" max="100"></progress>
+      </div>
+    <h4></h4>
+    <h2>Certificats</h2> 
+    <div class="certificat">
+    <p>DELF B2</p>
+    <p>TOEIC B2</p>
+    <P>C2I</P> 
+</div>   
+    
+<div align="center"><input type='button' name='button_export' title=''Imprimer onclick=preview(1) value='Imprimer'>
 </div>
-    <div class="my section">
-        <p><form class="dates">2015-?</form> chauffeur de bus</p>
-        <p><form class="dates">2012-2015</form> doctorant en biologie</p>
-    </div>
-<h3>formation</h3>
-</body>
+
+  </div>
+    </body>
+</html>
